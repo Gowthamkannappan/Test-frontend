@@ -1,11 +1,13 @@
 import React from 'react'
 import './App.css'
-import Test1 from './components/test'
+import Nav from './components/Nav'
+import Carousel from './components/Carousel'
 function App() {
 
   return (
     <>
-      <Test1/>
+      <Nav/>
+      <Carousel/>
     </>
   )
 }
