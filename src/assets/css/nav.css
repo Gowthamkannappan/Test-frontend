@@ -1,0 +1,83 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, ul, li, a, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Main navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  height: 15vh;
+}
+
+.logo {
+  width: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  padding: 2vw;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+
+
+.mobile-menu-toggle {
+  display: none;
+  background-color: #444;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media query for screens with width less than 600px */
+@media (max-width: 600px) {
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar{
+    display: flex;
+    justify-content: center;
+    gap: 25vw;
+    height: 15vh;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: row;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
