@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/** Contact us page **/
+
+.ContactPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+
+.bookings{
+  padding: 2vw;
+}
+
+.bookings button{
+  width: 25vw;
+  height: 10vh;
+  font-size: 2rem;
+  font-family: 'Sans';
+  border-radius: 2rem;
+  background-color: #3c2;
+  color: #fff;
+}

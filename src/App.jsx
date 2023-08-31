@@ -1,13 +1,17 @@
 import React from 'react'
 import './App.css'
-import Nav from './components/Nav'
-import Carousel from './components/Carousel'
+import RouterComponent from './Router'
+// import Nav from './components/Nav'
+// import Carousel from './components/Carousel'
+// import ServiceForm from './components/ServiceForm'
 function App() {
 
   return (
     <>
-      <Nav/>
+    <RouterComponent/>
+      {/* <Nav/>
       <Carousel/>
+      <ServiceForm/> */}
     </>
   )
 }
